@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html ng-app="MyFirstApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Rootscope - child controllers</title>
+    <script src="angular.min.js"></script>
+    <script src="controller.js"></script>
+</head>
+<body ng-controller="FirstController">
+    <p>Hijo: {{ nombre }}</p>
+    <p><strong>Valor del padre: </strong>{{ $parent.nombre }}</p>
+    <div ng-controller="ChildController">
+        <p><strong>Valor del hijo: </strong>{{ nombre }}</p>
+        <input type="text" ng-model="$parent.nombre">
+    </div>
+</body>
+</html>

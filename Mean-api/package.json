@@ -1,0 +1,10 @@
+{
+  "name": "APIRest",
+  "version": "0.0.1",
+  "description": "Api Rest",
+  "main": "server.js",
+  "dependencies": {
+    "express": "latest",
+    "mongoose": "^4.3.4"
+  }
+}
